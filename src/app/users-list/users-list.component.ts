@@ -7,7 +7,7 @@ import { UsersService } from '../shared/services/users.service';
   styleUrls: ['./users-list.component.css']
 })
 export class UsersListComponent implements OnInit {
-  users:any = [];
+  users:any;
 
   constructor(private usersService: UsersService) { }
 

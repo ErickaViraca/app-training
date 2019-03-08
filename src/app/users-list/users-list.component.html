@@ -1,7 +1,3 @@
-<head>
-    <h2>Users Grid</h2>
-</head>
-  
 <body>
   <section class="container p-t-3">
     <div class="row">
@@ -21,7 +17,7 @@
                         <div class="card-body">
                           <h5 class="card-title">{{u.login}}</h5>
                             <a href="{{u.html_url}}" target="_blank" class="card-link">{{u.url}}</a><br>
-                              <a href="#" class="card-link">Repositories</a>
+                              <a routerLink="/user/{{u.id}}" class="card-link">Repositories</a>
                          </div>
                       </div>
                     </div>     

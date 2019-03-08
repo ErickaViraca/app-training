@@ -15,4 +15,13 @@ getUsers(): Observable<any> {
   return this.httpClient.get(USERS_API + '/users');
 }
 
+getUserById(id): Observable<any> {
+  return this.httpClient.get(`${USERS_API}/${id}`);
+}
+
+getReposByUser(userLogin): Observable<any> {
+  console.log(`${USERS_API}/users/${userLogin}+ '/repos'`);
+  return this.httpClient.get(`${USERS_API}/users/${userLogin}+ '/repos'`);
+}
+
 }
